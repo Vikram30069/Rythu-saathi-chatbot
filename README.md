@@ -1,2 +1,10 @@
-# Rythu-saathi-chatbot
-A multilingual AI chatbot designed for smallholder farmers to get agricultural advice, weather-aware suggestions, market rates, pest diagnosis, and safety tips. Built for accessibility with support for English, Hindi, and Telugu
+# Rythu Saathi 🌾
+Multilingual AI Farming Assistant
+
+## Quick Start
+1. `npm install`
+2. Create `.env` from `.env.example`
+3. `npx prisma db push`
+4. `npm run dev`
+
+Visit http://localhost:3000

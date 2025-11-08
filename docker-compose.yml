@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - mongo
+      - redis
+  mongo:
+    image: mongo:7.0
+    ports:
+      - "27017:27017"
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
